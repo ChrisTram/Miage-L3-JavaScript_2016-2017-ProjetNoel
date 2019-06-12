@@ -1,4 +1,4 @@
-# Desciption du projet
+# Description du projet
 
 ## Auteurs
 
