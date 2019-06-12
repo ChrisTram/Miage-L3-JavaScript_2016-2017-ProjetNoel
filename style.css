@@ -1,0 +1,45 @@
+canvas
+{
+    border:2px solid;
+}
+
+input:invalid
+{
+    background-color: pink;
+}
+
+input:valid
+{
+    background-color: lightgreen;
+}
+
+table.th
+{
+    color : red;
+}
+
+table, th, td
+{
+    text-align: center;
+    border : 1px solid black;
+}
+
+tr:hover
+{
+    background-color: rgba(82, 81, 81, 0.43);
+}
+
+.goodGrade
+{
+    color : limegreen;
+}
+
+.mediumGrade
+{
+    color : #ffa91b;
+}
+
+.badGrade
+{
+    color : darkred;
+}

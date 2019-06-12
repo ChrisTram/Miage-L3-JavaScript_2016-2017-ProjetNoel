@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Projet Noël TRAMIER-AUBENAS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--Attention à l'ordre des importations-->
+    <script src="./JavaScript/main.js"></script>
+    <script src="./JavaScript/ObjetGraphique.js"></script>
+    <script src="./JavaScript/GameFramework.js"></script>
+    <script src="./JavaScript/Bulletin.js"></script>
+    <script src="./JavaScript/Matiere.js"></script>
+    <script src="./JavaScript/Player.js"></script>
+    <script src="./JavaScript/MatiereInformatique.js"></script>
+    <script src="./JavaScript/MatiereLangue.js"></script>
+    <script src="./JavaScript/MatiereGestion.js"></script>
+
+</head>
+
+<body>
+
+    <label>
+        Temps imparti :
+        <input type="range" id="timer" min="10" max="60" value="30" step="1" oninput="changeTimer(this.value);">
+    </label>
+
+    <label>
+        Définir couleur majoritaire :
+        <input type="color" value=#000000 oninput="putColor(this.value);">
+    </label>
+
+    <label>
+        Régler la vitesse :
+        <input type="button" value ="+" onclick="changeSpeed(1)">
+        <input type="button" value ="-" onclick="changeSpeed(-1)">
+    </label>
+
+    <canvas id="myCanvas" width=1400 height=700></canvas>
+
+    <br/>
+
+    <div id="timeLeft"></div>
+    <div id="fpsContainer"></div>
+
+    <div id="bulletin"></div>
+
+</body>
+
+</html>
